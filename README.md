@@ -3,6 +3,16 @@
 This extrudeModel can be used to create twisted meshes, which may be better to solve highly twisted flow at breathers, pump outlets etc. It also allowed to create helical-like meshes, but with skew distortion.
 Model was tested in OF 2306 and OF 11, but it should work in other .com and .org versions as well.
 
+To create meshes it takes:
+1. thickness of extrude;
+2. totalTwist along extrude;
+3. refPoint of twist axis (axis is colinear with normal of extrude surface);
+
+After extrusion (like generic linearNormal), layers are twisted around twist axis. Total twist is equally distributed by layers.
+
+![fig1](fig1.jpg)
+![fig2](fig2.png)
+
 ## How to compile
 1) Place it wherever you want;
 2) Copy the extrudeModel folder from src ($FOAM_SRC/mesh/extrudeModel/extrudeModel/);
