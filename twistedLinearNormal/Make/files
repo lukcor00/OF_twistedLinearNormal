@@ -1,0 +1,5 @@
+extrudeModel/extrudeModel.C
+extrudeModel/extrudeModelNew.C
+twistedLinearNormal.C
+
+LIB = $(FOAM_USER_LIBBIN)/libmyExtrudeModel
